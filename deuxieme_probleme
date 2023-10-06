@@ -1,0 +1,23 @@
+const firstLater = "please";
+const succondLater ="plezse";
+
+const comparerString = (firstLater,succondLater)=>{
+    let ArrayFirstLater = firstLater.split('')
+    let ArraySuccondLater = succondLater.split('')
+    let n1 = ArrayFirstLater.length
+    let n2 = ArraySuccondLater.length
+    if(n1==n2){
+        for(let i = 0;i<n1;i++){
+            if(ArrayFirstLater[i] = ArraySuccondLater[i]){
+                 console.log(`${ArrayFirstLater[i]}=>${i}`)
+            }else{
+                console.log(`${ArrayFirstLater[i]} =>${i}`)
+            }
+        }
+    }else{
+       return 'not equel'
+    }
+}
+
+
+comparerString(firstLater,succondLater)
