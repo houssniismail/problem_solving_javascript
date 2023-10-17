@@ -1,0 +1,15 @@
+const myNumber = "123 iiii";
+let res = 0
+let myNum = parseInt(myNumber)
+function numberToArray(number) {
+  	let array = number.toString().split("");
+  	return array.map(x => parseInt(x));
+}
+var myArray = numberToArray(myNum);
+let n = myArray.length
+myArray.forEach(ele => res += Math.pow(ele,n))
+if(res === myNumber){
+    console.log(res)
+}else{
+    console.log(`${res} is not a strong`)
+}
